@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="camp" src="models/campsight/model.gltf"></a-asset-item>
+        <a-asset-item id="pie" src="models/cherry_pie/model.gltf"></a-asset-item>
+        <a-asset-item id="dog" src="models/pug/model.gltf"></a-asset-item>
+      </a-assets>
+      
+      
+      <a-entity
+        gltf-model="#camp"
+        position="-0.5 0 -5"
+        rotation="0 180 0"
+        scale="1"
+      ></a-entity>
+      
+      <a-entity
+        gltf-model="#dog"
+        position="-2.328 -1.43 -3.538" 
+        rotation="0 270 0" 
+        scale="0.888 0.986 0.888"
+      ></a-entity>
+      
+      <a-entity 
+      gltf-model="#pie" 
+      position="0.351 0.876 -3.955" 
+      scale="0.12 0.12 0.12"
+      ></a-entity>
+        
+        <a-entity light="type: ambient; color: #"></a-entity>
+    </a-scene>
+  </body>
+</html>
+
+
